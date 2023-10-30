@@ -3,6 +3,7 @@ class Product {
     private double price;
 
     public Product(String name, double price) {
+        validatePrice(price);
         this.name = name;
         this.price = price;
     }
@@ -13,5 +14,11 @@ class Product {
 
     public double getPrice() {
         return price;
+    }
+
+    private void validatePrice(double price) {
+        if (price < 0) {
+            throw new IllegalArgumentException("Cena nie może być ujemna");
+        }
     }
 }
