@@ -1,13 +1,11 @@
 class Product {
     private String name;
     private double price;
-    private double tax;
 
     public Product(String name, double price) {
         validatePrice(price);
         this.name = name;
         this.price = price;
-        this.tax = 8;
     }
 
     public String getName() {
