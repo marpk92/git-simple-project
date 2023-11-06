@@ -7,7 +7,7 @@ class Product {
         validatePrice(price);
         this.name = name;
         this.price = price;
-        this.tax = 23;
+        this.tax = 26;
     }
 
     public String getName() {
