@@ -4,7 +4,7 @@ class Product {
 
     public Product(String name, double price) {
         validatePrice(price);
-        this.name = name;
+        this.name = "zla_nazwa";
         this.price = price;
     }
 
