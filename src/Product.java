@@ -2,10 +2,13 @@ class Product {
     private String name;
     private double price;
 
-    public Product(String name, double price) {
+    private double vat;
+
+    public Product(String name, double price, double vat) {
         validatePrice(price);
         this.name = name;
         this.price = price;
+        this.vat = vat;
     }
 
     public String getName() {
@@ -20,5 +23,9 @@ class Product {
         if (price < 0) {
             throw new IllegalArgumentException("Cena nie może być ujemna");
         }
+    }
+
+    public double getVat(double price, double vat) {
+        return price*vat;
     }
 }
