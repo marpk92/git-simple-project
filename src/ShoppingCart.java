@@ -3,6 +3,7 @@ import java.util.List;
 
 class ShoppingCart {
     private List<Product> products;
+    private List<Service> services;
 
     public ShoppingCart() {
         products = new ArrayList<>();
