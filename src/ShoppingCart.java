@@ -3,9 +3,15 @@ import java.util.List;
 
 class ShoppingCart {
     private List<Product> products;
+    private List<Service> services;
 
     public ShoppingCart() {
         products = new ArrayList<>();
+    }
+
+    public ShoppingCart(List<Product> products, List<Service> services) {
+        this.products = products;
+        this.services = services;
     }
 
     public void addProduct(Product product) {
