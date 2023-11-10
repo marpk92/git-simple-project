@@ -6,7 +6,7 @@ git add <nazwa_katalogu>/ - dodaje wszystkie pliki z katalogu
 git add <nazwa_katalogu>/ -A -dodaje wszystkie pliki nawet te zagniezdzone
 git commit -m "Twoja wiadomość commitu"
 
-Wyświetlenie historii zmian:u
+Wyświetlenie historii zmian:
 git log
 git log --oneline wyświetli każdy commit w jednej linii.
 git log --author=<nazwa_autora> wyświetli historię zmian autorstwa określonego autora.git 
