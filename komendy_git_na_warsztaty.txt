@@ -1,0 +1,37 @@
+Komendy git:
+Dodanie pliku do zmiand do commita i commit:
+git add nazwa_pliku.txt
+git add . - dodaje wszystkie pliki, z tą komendą trzeba uważać bo można dodać też pliki, których nie chcemy mieć w repozyorium np. pliki wygenerowane przez Intellij
+git add <nazwa_katalogu>/ - dodaje wszystkie pliki z katalogu
+git add <nazwa_katalogu>/ -A -dodaje wszystkie pliki nawet te zagniezdzone
+git commit -m "Twoja wiadomość commitu"
+
+Wyświetlenie historii zmian:u
+git log
+git log --oneline wyświetli każdy commit w jednej linii.
+git log --author=<nazwa_autora> wyświetli historię zmian autorstwa określonego autora.git 
+git log --graph wyświetli graficzne przedstawienie gałęzi i commitów.
+
+Revert:
+git revert <identyfikator_commitu>
+
+Utworzenie brancha:
+git branch <nazwa_branch>
+git branch --show-current - wyswietla nazwę aktualnego brancha
+git branch - wyswietla listę wszystkich branchy, z zaznaczeniem aktualnego
+
+Push:
+git push origin <nazwa_brancha>
+
+Update:
+git pull origin <nazwa_brancha>
+
+Rollback:
+git reset --hard HEAD - wycofuje niezacomitowane zmiany we wszystkich plikach
+git stash - wycofuje niezacomitowa zmiany i zapisuje je do schowka
+
+Merge:
+git merge <nazwa_innego_brancha>
+
+rebase:
+git rebase <nazwa_innego_brancha>
